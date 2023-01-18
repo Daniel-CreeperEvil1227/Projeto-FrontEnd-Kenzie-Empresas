@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Kenzie Empresas</title>
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/navbar.css">
+    <link rel="stylesheet" href="../../styles/scrollbar.css">
+    <link rel="stylesheet" href="../../styles/home-sector-section.css">
+    <link rel="stylesheet" href="../register/index.css">
+    <link rel="stylesheet" href="../../styles/departments-section.css">
+    <link rel="stylesheet" href="../../styles/modal.css">
+    <link rel="stylesheet" href="../../styles/toast.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="title-div">
+            <span></span>
+            <h1>Kenzie Empresas</h1>
+        </div>
+        <div data-dropdown-button="show-menu"></div>
+        <div data-dropdown-menu="hidden-menu">
+            <button class="logout-button">Logout</button>
+        </div>
+    </nav>
+    <main>
+        <section class="departments-section">
+            <div class="department-options">
+                <h2>Departamentos</h2>
+                <div class="select-div">
+                    <select class="select-companies">
+                        <option value="">Selecionar Empresa</option>
+                    </select>
+                </div>
+                <div class="create-departments-button">
+                    <img src="../../assets/plus-icon.svg" alt="Ícone de mais">
+                    <p>Criar</p>
+                </div>
+            </div>
+            <ul class="department-list"></ul>
+        </section>
+        <section class="registered-users-section">
+            <h2>Usuários cadastrados</h2>
+            <ul class="user-list"></ul>
+        </section>
+    </main>
+    <script type="module" src="../../scripts/admin.js"></script>
+</body>
+
+</html>

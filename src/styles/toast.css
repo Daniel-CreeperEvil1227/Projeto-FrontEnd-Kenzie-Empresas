@@ -1,0 +1,45 @@
+main > .message-toast,
+.background-modal > .message-toast {
+    border-radius: 0.625rem;
+    padding: 1.25rem 2.25rem;
+    position: absolute;
+    bottom: 35%;
+    z-index: 1;
+    max-width: 19rem;
+    animation: showToast 5000ms ease-in forwards;
+}
+
+.background-modal > .message-toast {
+    bottom: 2rem;
+}
+
+main > .message-toast > h3,
+.background-modal > .message-toast > h3 {
+    color: var(--gray900);
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+
+@keyframes showToast {
+    0% {
+        right: -500px;
+    }
+
+    25% {
+        right: 25px;
+    }
+
+    50% {
+        right: 25px;
+    }
+
+    75% {
+        right: 25px;
+    }
+
+    100% {
+        right: -500px;
+    }
+}

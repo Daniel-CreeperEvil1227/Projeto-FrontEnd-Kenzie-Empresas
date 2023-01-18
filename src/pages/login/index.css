@@ -1,0 +1,19 @@
+main > .form-section > h2 {
+    font-size: 2.5rem;
+}
+
+main > .form-section > h3,
+main > .form-section > p {
+    color: var(--gray100);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+main > .form-section > h3 {
+    margin-bottom: 0.875rem;
+}
+
+main > .form-section > p {
+    text-align: center;
+    margin: 0.875rem 0 0.3125rem 0;
+}

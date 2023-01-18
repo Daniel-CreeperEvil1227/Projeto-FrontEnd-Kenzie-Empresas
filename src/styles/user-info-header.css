@@ -1,0 +1,67 @@
+body > main > .user-info {
+    border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 1.25rem 1.9375rem 1.5rem 1.9375rem;
+    position: relative;
+}
+
+main > .user-info > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6875rem;
+    max-width: 100%;
+    width: max-content;
+    height: max-content;
+}
+
+.user-info > div > h2,
+.user-info > div > p,
+main > .user-info > p,
+.co-workers-section > div > h2,
+.co-workers-list > li > h3,
+.co-workers-list > li > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.co-workers-section > div > h2 {
+    -webkit-line-clamp: 4;
+}
+
+.co-workers-list > li > h3 {
+    -webkit-line-clamp: 2;
+}
+
+.user-info > div > h2 {
+    color: var(--gray100);
+    font-size: 1.875rem;
+    font-weight: 700;
+    max-width: 200px;
+}
+
+.user-info > div > p,
+main > .user-info > p {
+    color: var(--gray100);
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+
+main > .user-info > img {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    transition: cubic-bezier(0.64, 0.02, 0.41, 1.25) .7s;
+}
+
+main > .user-info > img:hover {
+    transform: translateY(-0.325rem);
+}

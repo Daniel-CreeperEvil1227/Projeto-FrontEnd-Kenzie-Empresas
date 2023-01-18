@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Kenzie Empresas</title>
+    <link rel="stylesheet" href="src/styles/globalStyles.css">
+    <link rel="stylesheet" href="src/styles/navbar.css">
+    <link rel="stylesheet" href="src/styles/home-sector-section.css">
+    <link rel="stylesheet" href="src/styles/scrollbar.css">
+    <link rel="stylesheet" href="src/styles/index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="title-div">
+            <span></span>
+            <h1>Kenzie Empresas</h1>
+        </div>
+        <div data-dropdown-button="show-menu"></div>
+        <div data-dropdown-menu="hidden-menu">
+            <a class="login-link" href="./src/pages/login/index.html">Login</a>
+            <a class="register-link" href="./src/pages/register/index.html">Cadastro</a>
+        </div>
+    </nav>
+    <main>
+        <div class="background-image"></div>
+        <section class="sector-section">
+            <div class="select-div">
+                <select class="select-sector">
+                    <option selected disabled>Selecionar setor</option>
+                </select>
+            </div>
+            <ul class="sector-list"></ul>
+        </section>
+    </main>
+    <script type="module" src="./src/scripts/home.js"></script>
+</body>
+
+</html>

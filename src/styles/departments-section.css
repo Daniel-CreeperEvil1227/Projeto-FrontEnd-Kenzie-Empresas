@@ -1,0 +1,187 @@
+main > .departments-section,
+main > .registered-users-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    gap: 1.1875rem;
+}
+
+main > .registered-users-section {
+    gap: 1rem;
+}
+
+main > .departments-section > .department-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.departments-section > .department-options > h2,
+.departments-section > ul div > h3,
+main > .registered-users-section > h2 {
+    color: var(--gray100);
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+main > .registered-users-section > h2 {
+    text-align: center;
+}
+
+.departments-section > .department-options > .create-departments-button {
+    background-color: var(--brand100);
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0.9175rem 3.125rem 0.9175rem 1.0425rem;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.departments-section > .department-options > .create-departments-button:hover {
+    opacity: 1;
+}
+
+.departments-section .create-departments-button > p {
+    color: var(--gray900);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+main > .departments-section > ul,
+main > .registered-users-section > ul {
+    list-style: none;
+    background-color: var(--gray800);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.75rem 5%;
+    width: 100%;
+    max-height: 24.0625rem;
+    padding: 2.125rem 2.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.departments-section > ul > .empty-display,
+.registered-users-section > ul > .empty-display,
+.view-department-modal > ul > .empty-display {
+    background-color: var(--gray800);
+    border: dashed 0.125rem var(--gray600);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: max-content;
+    height: max-content;
+    padding: 10%;
+    opacity: 0.9;
+}
+
+.departments-section > ul > .empty-display:hover,
+.registered-users-section > ul > .empty-display:hover,
+.view-department-modal > ul > .empty-display:hover {
+    opacity: 1;
+}
+
+.departments-section > ul > .empty-display > h3,
+.registered-users-section > ul > .empty-display > h3,
+.view-department-modal > ul > .empty-display > h3 {
+    color: var(--gray100);
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.departments-section > ul > .empty-display > p,
+.registered-users-section > ul > .empty-display > p,
+.view-department-modal > ul > .empty-display > p {
+    color: var(--gray100);
+    font-size: 1.375rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.departments-section > ul > li,
+.registered-users-section > ul > li {
+    background-color: var(--gray900);
+    border-bottom: 0.0625rem solid var(--brand100);
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    padding: 1.125rem 1.8125rem 1.3125rem 1.8125rem;
+    max-width: 30.5625rem;
+    min-width: 11rem;
+    width: 45%;
+    overflow-x: hidden;
+}
+
+.registered-users-section > ul > li {
+    gap: 2rem;
+}
+
+.departments-section li > div,
+.registered-users-section li > div {
+    display: flex;
+}
+
+.departments-section li > div:first-child,
+.registered-users-section li > div:first-child {
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.departments-section li div > h3,
+.registered-users-section li div > h3 {
+    font-size: 1.25rem;
+}
+
+.departments-section li div > p,
+.registered-users-section li div > p {
+    color: var(--gray100);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.departments-section li div > h3,
+.departments-section li div > p,
+.registered-users-section li div > h3,
+.registered-users-section li div > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.departments-section li > div:last-child,
+.registered-users-section li > div:last-child {
+    align-items: center;
+    gap: 1rem;
+    align-self: center;
+    width: max-content;
+}
+
+.registered-users-section li > div:last-child {
+    margin-left: 4.6875rem;
+}
+
+.departments-section li > div > img,
+.registered-users-section li > div > img {
+    cursor: pointer;
+    transition: cubic-bezier(0.64, 0.02, 0.41, 1.25) .9s;
+}
+
+.department-list div > img:hover,
+.user-list div > img:hover {
+    transform: translateY(-0.325rem);
+}
+
+.create-departments-button > img:hover{
+    transform: none;
+}

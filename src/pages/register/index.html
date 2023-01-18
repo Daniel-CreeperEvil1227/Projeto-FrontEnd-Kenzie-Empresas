@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Kenzie Empresas</title>
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/navbar.css">
+    <link rel="stylesheet" href="../../styles/home-sector-section.css">
+    <link rel="stylesheet" href="../../styles/scrollbar.css">
+    <link rel="stylesheet" href="../../styles/form-section.css">
+    <link rel="stylesheet" href="../../styles/toast.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="title-div">
+            <span></span>
+            <h1>Kenzie Empresas</h1>
+        </div>
+        <div data-dropdown-button="show-menu"></div>
+        <div data-dropdown-menu="hidden-menu">
+            <a class="home-link" href="../../../index.html">Home</a>
+            <a class="login-page-link" href="../login/index.html">Login</a>
+        </div>
+    </nav>
+    <main>
+        <section class="form-section">
+            <h2>Cadastre-se</h2>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <input type="password" placeholder="Sua senha" required>
+                <div class="select-div">
+                    <select>
+                        <option value="" selected>Nível profissional</option>
+                        <option value="estágio">Estágio</option>
+                        <option value="júnior">Júnior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="sênior">Sênior</option>
+                    </select>
+                </div>
+                <button class="register-button" disabled>Cadastre-se</button>
+            </form>
+            <a class="login-link" href="../login/index.html">Retornar</a>
+        </section>
+    </main>
+    <script type="module" src="../../scripts/register.js"></script>
+</body>
+
+</html>

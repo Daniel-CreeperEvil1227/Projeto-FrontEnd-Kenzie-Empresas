@@ -1,0 +1,462 @@
+body > .background-modal {
+    background-color: rgba(70, 35, 167, 0.13);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 6rem 0 8rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body > .background-modal > div {
+    position: relative;
+    animation: modalAppear 0.5s ease;
+}
+
+body > .background-modal > div,
+.background-modal > .view-department-modal > div,
+.background-modal > .view-department-modal > div > div,
+.view-department-modal > div > div > form,
+.background-modal > .create-department-modal > form,
+.background-modal > .edit-department-modal > form,
+.background-modal > .delete-department-modal > form,
+.background-modal > .edit-user-modal > form,
+.background-modal > .delete-user-modal > form,
+.background-modal > .edit-user-info-modal > form {
+    background-color: var(--gray900);
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+}
+
+body > .background-modal > .view-department-modal,
+body > .background-modal > .create-department-modal,
+body > .background-modal > .edit-department-modal,
+body > .background-modal > .delete-department-modal,
+body > .background-modal > .edit-user-modal,
+body > .background-modal > .delete-user-modal,
+body > .background-modal > .edit-user-info-modal {
+    gap: 1.25rem;
+    width: 90%;
+    padding: 3.0625rem 2.4375rem 4.3125rem 2.6875rem;
+    overflow-x: hidden;
+}
+
+body > .background-modal > .create-department-modal,
+body > .background-modal > .edit-department-modal,
+body > .background-modal > .edit-user-,
+body > .background-modal > .edit-user-info-modal {
+    padding: 2.4375rem 2.625rem 2.8125rem 2.625rem;
+}
+
+body > .background-modal > .edit-user-modal {
+    padding-bottom: 3.125rem;
+}
+
+body > .background-modal > .view-department-modal {
+    max-width: 53.5625rem;
+}
+
+body > .background-modal > .edit-user-info-modal {
+    padding-bottom: 3.5625rem;
+}
+
+body > .background-modal > .create-department-modal,
+body > .background-modal > .edit-department-modal,
+body > .background-modal > .edit-user-modal,
+body > .background-modal > .edit-user-info-modal {
+    max-width: 31.625rem;
+}
+
+body > .background-modal > .delete-department-modal,
+body > .background-modal > .delete-user-modal {
+    align-items: center;
+    gap: 2.375rem;
+    padding: 4.375rem 4.2188rem 4.125rem 4.2188rem;
+    max-width: 45.8125rem;
+}
+
+body > .background-modal > .delete-user-modal {
+    gap: 2.125rem;
+    padding-bottom: 3.5rem;
+}
+
+.background-modal > .view-department-modal > h2,
+.view-department-modal > div > div > h3,
+.view-department-modal li > div > h3,
+.background-modal > .create-department-modal > h2,
+.background-modal > .edit-department-modal > h2,
+.background-modal > .delete-department-modal > h2,
+.background-modal > .edit-user-modal > h2,
+.background-modal > .delete-user-modal > h2,
+.background-modal > .edit-user-info-modal > h2 {
+    color: var(--gray100);
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.background-modal > .edit-user-info-modal > h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-right: 1.5rem;
+}
+
+.background-modal > .view-department-modal > h2,
+.view-department-modal > div > div > h3,
+.view-department-modal > div > div > p,
+.view-department-modal li > div > h3,
+.view-department-modal li > div > p,
+.background-modal > .create-department-modal > h2,
+.background-modal > .edit-department-modal > h2,
+.background-modal > .delete-department-modal > h2,
+.background-modal > .edit-user-modal > h2,
+.background-modal > .edit-user-info-modal > h2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.background-modal > .view-department-modal > h2 {
+    max-width: 80%;
+}
+
+.view-department-modal > div > div > h3 {
+    -webkit-line-clamp: 4;
+}
+
+.background-modal > .create-department-modal > h2,
+.background-modal > .edit-department-modal > h2,
+.background-modal > .edit-user-modal > h2,
+.background-modal > .edit-user-info-modal > h2 {
+    -webkit-line-clamp: 2;
+}
+
+.background-modal > .delete-department-modal > h2 {
+    -webkit-line-clamp: 9;
+}
+
+.view-department-modal > div > div > h3,
+.view-department-modal > div > div > p {
+    max-width: 350px;
+}
+
+.background-modal > .delete-department-modal > h2,
+.background-modal > .delete-user-modal > h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    max-width: 37.375rem;
+    width: 100%;
+}
+
+.background-modal > .delete-user-modal > h2 {
+    max-width: 26.1875rem;
+}
+
+.background-modal .close-modal-button {
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: none;
+    width: max-content;
+    height: max-content;
+    padding: 0.5rem;
+    padding-bottom: 0.25rem;
+    position: absolute;
+    top: 1.2925rem;
+    right: 1.355rem;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.background-modal .close-modal-button:hover {
+    background-color: var(--gray700);
+    opacity: 1;
+}
+
+.background-modal > .view-department-modal > div {
+    width: 100%;
+    gap: 2.5rem;
+    margin-bottom: 1.9375rem;
+}
+
+.background-modal > .view-department-modal > div > div,
+.view-department-modal > div > div > form,
+.background-modal > .create-department-modal > form,
+.background-modal > .edit-department-modal > form,
+.background-modal > .delete-department-modal > form,
+.background-modal > .edit-user-modal > form,
+.background-modal > .delete-user-modal > form,
+.background-modal > .edit-user-info-modal > form {
+    width: 100%;
+    gap: 0.6875rem; 
+}
+
+.background-modal > .create-department-modal > form,
+.background-modal > .edit-user-modal > form,
+.background-modal > .edit-user-info-modal > form {
+    gap: 0.8125rem;
+}
+
+.background-modal > .edit-department-modal > form {
+    gap: 0.875rem;
+}
+
+.view-department-modal > div > div > h3,
+.view-department-modal li > div > h3 {
+    font-size: 1.25rem;
+}
+
+.view-department-modal > div > div > p,
+.view-department-modal li > div > p {
+    color: var(--gray100);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.view-department-modal .select-div > select,
+.create-department-modal .select-div > select,
+.edit-user-modal .select-div > select {
+    -ms-appearance: none;
+    appearance: none;
+    background-image: none;
+    background-color: var(--gray900);
+    box-shadow: none;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.302);
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.125rem;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    flex: 1;
+    padding: 0.8125rem 1% 0.8125rem 1.0625rem;
+    cursor: pointer;
+}
+
+.view-department-modal .select-div > select:focus,
+.create-department-modal .select-div > select:focus,
+.edit-user-modal .select-div > select:focus {
+    border: 0.0625rem solid rgba(0, 0, 0, 0.5);
+}
+
+.view-department-modal .select-div > select::-ms-expand,
+.create-department-modal .select-div > select::-ms-expand,
+.edit-user-modal .select-div > select::-ms-expand {
+    display: none;
+}
+
+.view-department-modal > div form > .select-div,
+.create-department-modal > form > .select-div,
+.edit-user-modal > form > .select-div {
+    display: flex;
+    line-height: 3;
+    width: max-content;
+    height: max-content;
+    margin-bottom: 0.1875rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.view-department-modal > div form > .select-div,
+.create-department-modal > form > .select-div,
+.edit-user-modal > form > .select-div  {
+    width: 100%;
+}
+
+.edit-user-modal > form > .select-div {
+    margin-bottom: 0;
+}
+
+.create-department-modal > form > .select-div,
+.edit-user-modal > form > .select-div:nth-child(2) {
+    margin-bottom: 0.0625rem;
+}
+
+.view-department-modal > div form > .select-div::after,
+.create-department-modal > form > .select-div::after,
+.edit-user-modal > form > .select-div::after {
+    background-color: transparent;
+    content: url("../assets/arrow-icon.svg");
+    transition: .25s all ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1.375rem;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.view-department-modal .select-div option,
+.create-department-modal .select-div option,
+.edit-user-modal .select-div option {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.view-department-modal > div form > .hire-user-button,
+.view-department-modal li > .dismiss-user-button,
+.create-department-modal > form > .create-department-button,
+.edit-department-modal > form > .edit-department-button,
+.delete-department-modal > form > .delete-department-button,
+.edit-user-modal > form > .edit-user-button,
+.delete-user-modal > form > .delete-user-button,
+.edit-user-info-modal > form > .edit-user-info-button {
+    background-color: var(--sucess100);
+    border: 0.0625rem solid var(--sucess100);
+    color: var(--gray900);
+    font-size: 1.125rem;
+    font-weight: 700;
+    width: max-content;
+    padding: 0.8438rem 1.625rem;
+    opacity: 0.9;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.create-department-modal > form > .create-department-button,
+.edit-department-modal > form > .edit-department-button,
+.edit-user-modal > form > .edit-user-button,
+.edit-user-info-modal > form > .edit-user-info-button  {
+    background-color: var(--brand100);
+    border: 0.0625rem solid var(--brand100);
+    width: 100%;
+    align-self: flex-start;
+}
+
+.delete-department-modal > form > .delete-department-button,
+.delete-user-modal > form > .delete-user-button {
+    max-width: 26.375rem;
+    width: 100%;
+    padding: 0.8438rem 0;
+    align-self: center;
+}
+
+.edit-user-info-modal > form > .edit-user-info-button  {
+    margin-top: 0.5rem;
+}
+
+.view-department-modal > div form > .hire-user-button:hover,
+.view-department-modal li > .dismiss-user-button:hover,
+.create-department-modal > form > .create-department-button:hover,
+.edit-department-modal > form > .edit-department-button:hover,
+.delete-department-modal > form > .delete-department-button:hover,
+.edit-user-modal > form > .edit-user-button:hover,
+.delete-user-modal > form > .delete-user-button:hover,
+.edit-user-info-modal > form > .edit-user-info-button:hover {
+    opacity: 1;
+}
+
+.view-department-modal > div form > .hire-user-button:disabled,
+.view-department-modal li > .dismiss-user-button:disabled,
+.create-department-modal > form > .create-department-button:disabled,
+.edit-department-modal > form > .edit-department-button:disabled,
+.delete-department-modal > form > .delete-department-button:disabled,
+.edit-user-modal > form > .edit-user-button:disabled,
+.delete-user-modal > form > .delete-user-button:disabled,
+.edit-user-info-modal > form > .edit-user-info-button:disabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+.background-modal > .view-department-modal > ul {
+    list-style: none;
+    background-color: var(--gray800);
+    display: flex;
+    gap: 1.9375rem;
+    max-width: 47.4094rem;
+    width: 100%;
+    height: 18.4375rem;
+    padding: 2.6875rem 2.0625rem 2.625rem 2.0625rem;
+    overflow-x: scroll;
+}
+
+.view-department-modal > ul > li {
+    background-color: var(--gray900);
+    border-bottom: 0.0625rem solid var(--brand100);
+    display: flex;
+    flex-direction: column;
+    gap: 1.375rem;
+    min-width: 13.4375rem;
+    max-height: 12.0625rem;
+    padding: 1.125rem 1.8125rem 1.312rem 1.8125rem;
+}
+
+.view-department-modal li > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5625rem;
+}
+
+.view-department-modal li > .dismiss-user-button {
+    background-color: var(--gray900);
+    border: 0.0625rem solid var(--alert100);
+    color: var(--alert100);
+    padding: 0.75rem 2.5625rem;
+    align-self: center;
+}
+
+.view-department-modal li > .dismiss-user-button:hover {
+    background-color: var(--alert100);
+    color: var(--gray900);
+}
+
+.create-department-modal > form > input,
+.edit-department-modal > form > textarea,
+.edit-user-info-modal > form > input {
+    background-color: var(--gray900);
+    border: 0.0625rem solid rgba(0, 0, 0, 0.302);
+    padding: 0.9375rem 1.0625rem;
+    outline: none;
+    width: 100%;
+}
+
+.create-department-modal > form > input::placeholder,
+.edit-department-modal > form > textarea::placeholder,
+.edit-user-info-modal > form > input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.create-department-modal > form > input:focus,
+.edit-department-modal > form > textarea:focus,
+.edit-user-info-modal > form > input:focus {
+    border: 0.0625rem solid rgba(0, 0, 0, 0.5);
+}
+
+.create-department-modal > form > input:focus::placeholder,
+.edit-department-modal > form > textarea:focus::placeholder,
+.edit-user-info-modal > form > input:focus::placeholder {
+    color: transparent;
+}
+
+.edit-department-modal > form > textarea {
+    min-height: 8.3125rem;
+    resize: vertical;
+}
+
+@keyframes modalAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes modalDisappear {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-200%);
+    }
+}

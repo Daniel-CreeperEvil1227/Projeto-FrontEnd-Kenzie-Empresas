@@ -1,0 +1,78 @@
+body > main > .co-workers-section {
+    background-color: var(--gray800);
+    border: 0.0625rem solid var(--gray600);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}
+
+main > .co-workers-section > h2,
+.co-workers-section > .co-workers-list > h2 {
+    color: var(--gray100);
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 29.25rem;
+}
+
+.co-workers-section > .co-workers-list > h2 {
+    height: 12rem;
+}
+
+main > .co-workers-section > div {
+    background-color: var(--brand100);
+    border: 0.0625rem solid var(--brand100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.2188rem 1.25rem;
+}
+
+.co-workers-section > div > h2 {
+    color: var(--gray900);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main > .co-workers-section > .co-workers-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8125rem 3.375rem;
+    width: 100%;
+    max-height: 22rem;
+    padding: 3.625rem 3.6875rem 4.6875rem 3.6875rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.co-workers-section > .co-workers-list > li {
+    border: 0.0625rem solid var(--brand100);
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding: 0.8125rem 1.4688rem;
+    max-width: 19.875rem;
+    width: 100%;
+}
+
+.co-workers-list > li > h3,
+.co-workers-list > li > p {
+    color: var(--gray100);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.co-workers-list > li > p {
+    font-weight: 400;
+}

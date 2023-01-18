@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Kenzie Empresas</title>
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/navbar.css">
+    <link rel="stylesheet" href="../../styles/scrollbar.css">
+    <link rel="stylesheet" href="../../styles/form-section.css">
+    <link rel="stylesheet" href="../../styles/toast.css">
+    <link rel="stylesheet" href="../register/index.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="title-div">
+            <span></span>
+            <h1>Kenzie Empresas</h1>
+        </div>
+        <div data-dropdown-button="show-menu"></div>
+        <div data-dropdown-menu="hidden-menu">
+            <a class="home-link" href="../../../index.html">Home</a>
+            <a class="register-page-link" href="../register/index.html">Cadastro</a>
+        </div>
+    </nav>
+    <main>
+        <section class="form-section">
+            <h2>Login</h2>
+            <h3>Preencha os campos para realizar login</h3>
+            <form>
+                <input type="email" placeholder="Seu e-mail" required>
+                <input type="password" placeholder="Sua senha" required>
+                <button class="login-button" disabled>Login</button>
+            </form>
+            <p>ou</p>
+            <a class="login-link" href="../register/index.html">Cadastre-se</a>
+        </section>
+    </main>
+    <script type="module" src="../../scripts/login.js"></script>
+</body>
+
+</html>
