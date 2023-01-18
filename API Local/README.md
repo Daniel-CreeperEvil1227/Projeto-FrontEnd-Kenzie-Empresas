@@ -11,3 +11,6 @@ Para iniciar:
 
 Para encerrar:
 - Ctrl + C
+
+Link original/créditos da API:
+https://github.com/Jardel-Kenzie/m2-api-empresas
